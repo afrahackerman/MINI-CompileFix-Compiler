@@ -1,4 +1,5 @@
 MINI CompileFix COMPILER:
+
 ------------ MAIN MENU ---------------
 
 1. Lexical Analysis
