@@ -1,0 +1,11 @@
+Line 1: Extra ')' removed.
+Line 1: Missing semicolon. Auto-fixed.
+Line 2: Missing semicolon. Auto-fixed.
+Line 3: Missing semicolon. Auto-fixed.
+Line 5: Missing semicolon. Auto-fixed.
+Line 6: Extra ')' removed.
+Line 6: Missing semicolon. Auto-fixed.
+Line 7: Missing semicolon. Auto-fixed.
+Line 9: Missing parentheses in if-condition. Auto-fixed.
+Line 10: Missing semicolon. Auto-fixed.
+Line 12: Missing semicolon. Auto-fixed.

@@ -1,0 +1,13 @@
+Semantic Error at line 6: Undeclared variable z
+Semantic Error at line 7: Undeclared variable w
+Semantic Error at line 8: Undeclared variable z
+Semantic Error at line 10: Undeclared variable z
+Semantic Error at line 10: Undeclared variable z
+Semantic Error at line 12: Undeclared variable z
+Semantic Error at line 12: Undeclared variable z
+
+Symbol Table:
+a : int
+m : int
+x : int
+y : int
