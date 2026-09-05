@@ -22,7 +22,7 @@ Built for **Compiler Lab (CSE-3528)**, Department of Computer Science and Engine
 
 ---
 
-#Enter your choice:
+##Enter your choice:
 Typical session:
 1. Put broken C-like code in test3.c
 2. Choose 1 — produces cleaned source + tokens
@@ -31,7 +31,7 @@ Typical session:
 5. Inspect the generated files
 
 
-#Output files:
+##Output files:
 
 1. cleaned_code.c
 -Produced by: Lexical
@@ -55,7 +55,7 @@ Typical session:
 
 ---Token kinds: KEYWORD, IDENTIFIER, NUMBER, OPERATOR, SEPARATOR
 
-#Sample run:
+##Sample run:
 Input (test3.c):
 int x = 5)
 int m=9
@@ -73,7 +73,7 @@ z = z + 1
 z = z - 1
 }
 
-#What CompileFix does:
+##What CompileFix does:
 Drops both comment blocks
 Removes extra ) after 5 and after x + y
 Inserts missing ; on declaration and assignment lines
@@ -83,7 +83,7 @@ Reports uses of undeclared z / w (depending on whether they were declared)
 
 ---Open syntax_fixed.c and syntax_errors.txt after phase 2 to see the repaired program and the log.
 
-#Project structure:
+##Project structure:
 ├── CompileFix.cpp      # Lexer + parser + semantic + main menu
 ├── test3.c             # Sample / your input program
 ├── cleaned_code.c      # Generated
@@ -94,7 +94,7 @@ Reports uses of undeclared z / w (depending on whether they were declared)
 └── README.md
 ---Single-file implementation for the lab: easier to read, compile, and demo.
 
-#Implementation notes:
+##Implementation notes:
 Lexical analysis:
 Character scan with string-literal awareness so // and /* inside strings are not treated as comments
 Multi-character operators: ==, !=, <=, >=, ++, --
@@ -113,7 +113,7 @@ Tracks identifiers already declared in the current statement
 Warns when a float value is assigned into an int variable
 ---This is token-stream semantics, not AST-based analysis. It is enough for the lab subset and for showing symbol tables, not a production type checker.
 
-#Limitations:
+##Limitations:
 Multiple declarators in one statement (int a, b;) are only partially handled
 No nested scopes — all names are file-level
 No functions, arrays, pointers, or structs
@@ -122,7 +122,7 @@ No intermediate representation or code generation
 printf / scanf and preprocessor directives are not recognized
 ---These limits are documented in the course report and are expected for a mini front-end.
 
-#Future work:
+##Future work:
 Formal LL(1) / recursive-descent parser with FIRST / FOLLOW
 Abstract syntax tree for semantic analysis and later codegen
 Stack of symbol tables for block scope
@@ -133,7 +133,7 @@ Better diagnostics (warning vs error, source snippets)
 Simple backend (three-address code or C dump)
 
 
-#Team:
+##Team:
 Course: Compiler Lab (CSE-3528)
 Supervisor: Mrs. Israt Binte Habib
 Institution: International Islamic University Chittagong
@@ -142,8 +142,8 @@ Tahasina Tasnim Afra (C233456) — Primary developer (design, implementation, te
 Nafia Nowshin (C233466) — Team member
 Nusrath Jahan Shawon (C233449) — Team member
 
-#Academic note
+##Academic note
 This repository is an educational compiler front-end. It is not a general-purpose C compiler. Use it to study scanning, error recovery, and a first symbol table — not to compile real C programs.
 
-#License
+##License
 Educational use. You may study, fork, and adapt this project for learning(Please give authorship).
