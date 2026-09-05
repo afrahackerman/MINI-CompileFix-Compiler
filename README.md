@@ -1,4 +1,8 @@
-MINI CompileFix COMPILER:
+# MINI CompileFix Compiler
+
+A console-based mini compiler in C++ for a small C-like language. It does more than report errors — it **detects common beginner mistakes and automatically repairs them**, then continues analysis so you still get tokens, a symbol table, and a corrected source file.
+Built for **Compiler Lab (CSE-3528)**, Department of Computer Science and Engineering, International Islamic University Chittagong (Autumn 2025, 5th Semester).
+**Grade: A+**
 
 ------------ MAIN MENU ---------------
 
